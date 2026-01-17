@@ -117,8 +117,8 @@ async def start_new_game(event: Event, group_id: str):
         # 随机选择宝可梦
         chara_id_list = list(CHARA_NAME.keys())
         random.shuffle(chara_id_list)
-        # correct_id = chara_id_list[0]
-        correct_id = 25
+        correct_id = chara_id_list[0]
+
         # 获取角色信息
         chara_info = CHARA_NAME[correct_id]
         name = chara_info[0]
